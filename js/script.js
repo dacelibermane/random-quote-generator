@@ -87,27 +87,25 @@ function printQuote(){
     <p class="source">${randomQuote.source}`;
   
   if(randomQuote.citation){
-      html += `<span class="citation">${randomQuote.citation}</span>`
+      html += `<span class="citation">${randomQuote.citation}</span>`;
     }
 
   if(randomQuote.year){
-    html += `<span class="year">${randomQuote.year}</span>`
+    html += `<span class="year">${randomQuote.year}</span>`;
     }
 
   if(randomQuote.tag){
-    html += `<span class="tag">${randomQuote.tag}</span>`
+    html += `<span class="tag">${randomQuote.tag}</span>`;
     }
 
-  html += `</p>`
+  html += `</p>`;
 
   quoteBox.innerHTML = html;
   document.body.style.background = generateRandomColor(generateRandomRGBValue);
 };
 
 //timing function that prints random quote after every 10 seconds.
- setInterval(function (){
-  printQuote();
-}, 10000);
+ setInterval(printQuote, 10000);
 
 
 /***
