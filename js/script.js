@@ -94,7 +94,6 @@ function printQuote(){
     html += `<span class="year">${randomQuote.year}</span>`
     }
 
-    // additionally added tag, that categorizes the quote
   if(randomQuote.tag){
     html += `<span class="tag">${randomQuote.tag}</span>`
     }
